@@ -1,0 +1,121 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/* POSITION POMMI
+.main {
+  position: relative;
+}
+.testisection {
+  height: 40px;
+}
+.nav_some {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+*/
+
+.nav_main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.nav_main ul > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  border: solid black 1px;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.nav_some ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.nav_some ul > * {
+  padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+@media screen and (min-width: 426px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .aside1 {
+    flex-basis: auto;
+  }
+  .aside2 {
+    flex-basis: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .aside1 {
+    order: 1;
+    flex-basis: 0;
+  }
+  .main {
+    order: 2;
+    flex-basis: 0;
+    flex-grow: 4;
+  }
+  .aside2 {
+    order: 3;
+    flex-basis: 0;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+.header {
+  background-color: gold;
+}
+.main {
+  background-color: darkorange;
+}
+.aside1 {
+  background-color: mediumseagreen;
+}
+.aside2 {
+  background-color: seagreen;
+}
+.footer {
+  background-color: lightgreen;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-block-end: 1rem;
+}
+p {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.facelogo {
+  background-color: #4267b2;
+}
+.twitlogo {
+  background-color: #6da5ef;
+}
+.emaillogo {
+  background-color: #767676;
+}
